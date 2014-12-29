@@ -3,6 +3,8 @@ TeamMoose
 
 Hello. We are <b>Team Moose</b>.
 
+![alt tag](https://raw.github.com/JohnnPM/TeamMoose/blob/master/resources/TeamMoose.jpg)
+
 <b><i>Who are we?</b></i>
 
 Team Moose is a build team, dev team, and event team. There are 

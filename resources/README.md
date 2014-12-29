@@ -16,5 +16,11 @@ Files
 	information about the plugin.
 </i>
 
+- <b><i>TeamMoose.jpg</b></i><br>
+<i><b>Added TM-0.0.1-SNAPSHOT</b>
+
+	u wot m8
+</i>
+
 ---
 TeamMoose 2014 • http://www.teammoose.org
