@@ -64,6 +64,7 @@
 				<directory>resources</directory>
 				<includes>
 					<include>plugin.yml</include>
+					<include>TeamMoose.jpg</include>
 				</includes>
 			</resource>
 		</resources>

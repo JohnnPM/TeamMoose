@@ -32,11 +32,11 @@ If you would like to join us [click here](http://bit.ly/TeamMooseApp)! :D
 Have a great day!
 
 <i><b>TODO:</i></b><br>
-[X] Put a description of Team Moose here with other necessary information<br> 
-[X] Add info files<br>
-[ ] [~Create website and~](http://www.teammoose.org) put json info here<br> 
+[X] ~Put a description of Team Moose here with other necessary information~<br> 
+[X] ~Add info files~<br>
+[ ] ~[Create a website](http://www.teammoose.org)~ put json info here<br> 
 [ ] Write coding style<br>
-[X] Add other info here<br>
+[X] ~Add other info here~<br>
 [ ] Add team members list<br>
 
 ---
