@@ -3,7 +3,7 @@ TeamMoose
 
 Hello. We are <b>Team Moose</b>.
 
-![alt tag](https://raw.github.com/JohnnPM/TeamMoose/blob/master/resources/TeamMoose.jpg)
+![alt tag](https://www.github.com/JohnnPM/TeamMoose/blob/master/resources/TeamMoose.jpg)
 
 <b><i>Who are we?</b></i>
 
