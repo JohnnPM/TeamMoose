@@ -24,9 +24,9 @@ Classes
 	The logger for the project. A instance is created 
 	in TeamMooseMain with a getter method to call it. 
 	When using this logger, it prints the message as follows:
-	```
-	[TM]: Awesome Moose message
-	```
+	
+		[TM]: Awesome Moose message
+		
 	TM being the prefix and the message as so.
 </pre></i>
 
