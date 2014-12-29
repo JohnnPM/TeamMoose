@@ -9,14 +9,14 @@ Since: <i>0.0.1-SNAPSHOT</i><p>
 Classes
 ---
 
-- <b><i>TeamMooseMain</i></b>
+- <b><i>TeamMooseMain</i></b><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b>
 
 	The main class for the plugin. 
 	Contains the onLoad(), onEnable(), and onDisable() methods bukkit
 	calls in the correpsonding events.
 </i>
-- <b><i>TMLogger</i></b>
+- <b><i>TMLogger</i></b><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b>
 	
 	The logger for the project. A instance is created 

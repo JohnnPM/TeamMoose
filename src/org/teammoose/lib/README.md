@@ -9,7 +9,7 @@ Since: <i>0.0.1-SNAPSHOT</i><p>
 Classes
 ---
 
-- <i>References</i>
+- <i>References</i><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b>
 	
 	Random references such as messages or variables that 

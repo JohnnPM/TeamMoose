@@ -8,7 +8,7 @@ Since: <i>0.0.1-SNAPSHOT</i><p>
 Files
 ---
 
-- <b><i>plugin.yml</b></i>
+- <b><i>plugin.yml</b></i><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b>
 	
 	The plugin.yml file that is necessary for bukkit 
