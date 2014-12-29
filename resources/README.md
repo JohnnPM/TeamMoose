@@ -2,7 +2,7 @@ TeamMoose
 ===========
 Folder: <i>resources</i><p>
 Since: <i>0.0.1-SNAPSHOT</i><p>
-<b>Description:</b>
+<b>Description:</b><br>
 <i>resources for the plugin such as plugin.yml, configs, etc.</i><p>
 
 Files
