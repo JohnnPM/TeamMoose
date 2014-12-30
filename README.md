@@ -34,12 +34,12 @@ If you would like to join us [click here](http://bit.ly/TeamMooseApp)! :D
 Have a great day!
 
 <i><b>TODO:</i></b><br>
-[X] ~Put a description of Team Moose here with other necessary information~<br> 
-[X] ~Add info files~<br>
-[ ] ~[Create a website](http://www.teammoose.org)~ put json info here<br> 
-[ ] Write coding style<br>
-[X] ~Add other info here~<br>
-[ ] Add team members list<br>
+- [X] Put a description of Team Moose here with other necessary information
+- [X] Add info files
+- [X] [Create a website](http://www.teammoose.org) put json info here
+- [ ] Write coding style
+- [X] Add other info here
+- [ ] Add team members list
 
 ---
 TeamMoose 2014 • http://www.teammoose.org

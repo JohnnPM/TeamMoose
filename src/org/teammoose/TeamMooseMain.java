@@ -11,8 +11,12 @@ import java.util.logging.Level;
 import lombok.Getter;
 
 import org.apache.commons.lang.Validate;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.teammoose.command.CommandFramework;
 import org.teammoose.lib.References;
+import org.teammoose.util.RegisterUtil;
 
 /**
  * TeamMoose Main class for TeamMoose plugin.
@@ -55,12 +59,20 @@ public class TeamMooseMain extends JavaPlugin
 	 * @since 0.0.1-SNAPSHOT
 	 * @return the instance for the logger.
 	 */
-	@Getter private TMLogger tMLogger;
+	@Getter private TMLogger tMLogger = new TMLogger(this);
+	
+	/**
+	 * The command framework for the plugin.
+	 * 
+	 * @author 598Johnn897
+	 * @since 0.0.1-SNAPSHOT
+	 * @return the command framework's instance
+	 */
+	@Getter private CommandFramework cMDFramework;
 	
 	@Override public void onLoad()
 	{
 		log(References.LOADING);
-		instance = this;
 	}
 	
 	@Override public void onEnable()
@@ -68,7 +80,14 @@ public class TeamMooseMain extends JavaPlugin
 		log(References.ENABLING);
 		try 
 		{
-			tMLogger = new TMLogger(get());
+			instance = this;
+
+			cMDFramework = new CommandFramework(get());
+			
+			cMDFramework.registerCommands();
+			cMDFramework.registerHelp();
+			
+			RegisterUtil.registerEvents(get());
 		} 
 		catch (Exception e)
 		{
@@ -97,6 +116,11 @@ public class TeamMooseMain extends JavaPlugin
 		{
 			log(References.DISABLED);
 		}
+	}
+	
+	@Override public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
+	{
+		return cMDFramework.handleCommand(sender, label, cmd, args);
 	}
 	
 	/**

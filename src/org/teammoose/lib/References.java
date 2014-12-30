@@ -23,4 +23,10 @@ public class References
 	public static final String DISABLED = "Our moose team as successfully disabled the TeamMoose plugin. Moose.";
 	
 	public static final String ERROR = "Oh noes! Something happened... I blame the meese:";
+	
+	// Game messages
+	public static final String PREFIX = "<gray>[<aqua>TM<gray>]: <reset>";
+	public static final String ERROR_PREFIX = "<red>[TM]: <reset>";
+	public static final String SUCCESS_PREFIX = "<green>[TM]: <reset>";
+
 }
