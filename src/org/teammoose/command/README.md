@@ -85,7 +85,23 @@ Commands
 
 - <b><i>TagCommand</i></b><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b>
-
+	
+	Command: /tag
+	Arguments: <br>
+	/tag set <prefix|suffix> <player> <prefix/suffix...> : Adds the defined prefix/suffix
+	/tag remove <prefix|suffix|all> <player> : removes either the prefix, suffix, or both from the defined player.
+			
+	This command modifies the player's tag using the TagUtil
+	util file. This creates a player's team if they don't already
+	have one, adds them to their team, and then adds the desired
+	prefix/suffix.
+	
+	When the remove command is run it sets the prefix/suffix to ""
+	and if all the tags are removed the player is removed from
+	his/her team and the team is unregisted on the scoreboard to
+	prevent bugs with the system.
+	
+	TODO: Fix the playerHasTags(Player) method inside of TagUtil
 </i>
 
 ---
