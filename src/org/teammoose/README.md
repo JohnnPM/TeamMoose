@@ -28,6 +28,41 @@ Classes
 	TM being the prefix and the message as so.
 </i>
 
+Sub-Packages
+---
+
+- <b><i>org.teammoose.chat</b></i><br>
+<i><b>Added TM-0.0.1-SNAPSHOT</b>
+
+	The classes that manage the chat such as the
+	listener for the AsyncPlayerChatEvent formatting it
+	with the correct colors and prefixes.
+</i>
+- <b><i>org.teammoose.command</b></i><br>
+<i><b>Added TM-0.0.1-SNAPSHOT</b>
+
+	This package contains the command framework
+	and the command classes that use the framework.
+</i>
+- <b><i>org.teammoose.handler</b></i><br>
+<i><b>Added TM-0.0.1-SNAPSHOT</b>
+
+	The event handlers such as LoginEvent, QuitEvent,
+	PlayerMoveEvent, etc...
+</i>
+- <b><i>org.teammoose.lib</b></i><br>
+<i><b>Added TM-0.0.1-SNAPSHOT</b>
+
+	Various classes that contain references that are
+	used throughout the project.
+</i>
+- <b><i>org.teammoose.util</b></i><br>
+<i><b>Added TM-0.0.1-SNAPSHOT</b>
+	Utility classes that are used in this project. Some
+	of the util classes are color formatters, tag util for
+	the player, etc...
+</i>
+
 ---
 TeamMoose 2014 • http://www.teammoose.org
 

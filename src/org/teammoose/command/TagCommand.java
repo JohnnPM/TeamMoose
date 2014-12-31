@@ -85,7 +85,7 @@ public class TagCommand implements CommandListener
 			{
 				Player player = Bukkit.getPlayer(info.getArgs()[0]);
 				TagUtil.setTagSuffix(player,
-						info.getFinalArg(1).replaceAll("_", " "));
+						info.getFinalArg(1));
 				info.getSender()
 						.sendMessage(
 								ColorUtil

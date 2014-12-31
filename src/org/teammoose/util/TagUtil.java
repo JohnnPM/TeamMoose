@@ -240,7 +240,7 @@ public class TagUtil
 			// Cut it down to only 16 characters
 			suffix = suffix.substring(0, Math.min(suffix.length(), 16));
 			
-			team.setPrefix(suffix);
+			team.setSuffix(suffix);
 		}
 		
 		team.addPlayer(player);
@@ -334,6 +334,22 @@ public class TagUtil
 			if (playersWithSuffixes.contains(player.getUniqueId()))
 				playersWithSuffixes.remove(player.getUniqueId());
 		}
+	}
+	
+	/**
+	 * TODO write javadoc
+	 */
+	public static String getPlayerPrefix(Player player)
+	{
+		return player.getScoreboard().getTeam(player.getName()).getPrefix();
+	}
+	
+	/**
+	 * TODO write javadoc
+	 */
+	public static String getPlayerSuffix(Player player)
+	{
+		return player.getScoreboard().getTeam(player.getName()).getSuffix();
 	}
 	
 	/**

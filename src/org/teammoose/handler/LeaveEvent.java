@@ -1,7 +1,7 @@
 /*
  * Author: 598Johnn897
  * 
- * Date: Dec 29, 2014
+ * Date: Dec 30, 2014
  * Package: org.teammoose.handler
  */
 package org.teammoose.handler;
@@ -9,7 +9,7 @@ package org.teammoose.handler;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.teammoose.util.ColorUtil;
 
 /**
@@ -17,11 +17,11 @@ import org.teammoose.util.ColorUtil;
  * @author 598Johnn897
  * @since
  */
-public class LoginEvent implements Listener
-{	
-	@EventHandler public void onLogin(PlayerJoinEvent event)
+public class LeaveEvent implements Listener
+{
+	@EventHandler public void onLeave(PlayerQuitEvent event)
 	{
 		Player player = event.getPlayer();
-		event.setJoinMessage(ColorUtil.formatString("<yellow>%s joined.", player.getName()));
+		event.setQuitMessage(ColorUtil.formatString("<yellow>%s left.", player.getName()));
 	}
 }

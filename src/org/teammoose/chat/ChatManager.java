@@ -7,11 +7,11 @@
 package org.teammoose.chat;
 
 /**
- * 
+ * TODO
  * @author 598Johnn897
  * @since
  */
 public class ChatManager
 {
-
+	
 }

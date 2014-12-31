@@ -9,6 +9,7 @@ package org.teammoose;
 import java.util.logging.Level;
 
 import lombok.Getter;
+import net.md_5.bungee.api.ChatColor;
 
 import org.apache.commons.lang.Validate;
 import org.bukkit.command.Command;
