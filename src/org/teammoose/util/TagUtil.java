@@ -341,7 +341,10 @@ public class TagUtil
 	 */
 	public static String getPlayerPrefix(Player player)
 	{
-		return player.getScoreboard().getTeam(player.getName()).getPrefix();
+		if (player.getScoreboard().getTeam(player.getName()).getPrefix() != null)
+			return player.getScoreboard().getTeam(player.getName()).getPrefix();
+		else
+			return "";
 	}
 	
 	/**
@@ -349,7 +352,10 @@ public class TagUtil
 	 */
 	public static String getPlayerSuffix(Player player)
 	{
-		return player.getScoreboard().getTeam(player.getName()).getSuffix();
+		if (player.getScoreboard().getTeam(player.getName()).getSuffix() != null)
+			return player.getScoreboard().getTeam(player.getName()).getSuffix();
+		else
+			return "";	
 	}
 	
 	/**
