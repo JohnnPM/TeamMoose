@@ -28,7 +28,7 @@ Classes
 	You can do <br>
 		<code>ColorUtil.formatColors("<gold>moose");</code>
 </i>
-- <i><b>RegisterUtil</i></b>
+- <i><b>RegisterUtil</i></b><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b><br>
 	
 	Various methods for dynamically registering things in bukkit.
