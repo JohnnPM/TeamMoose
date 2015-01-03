@@ -339,6 +339,30 @@ public class TagUtil
 	/**
 	 * TODO write javadoc
 	 */
+	public static void setPlayerColor(Player player, ChatColor color)
+	{
+		player.setDisplayName(color + player.getName());
+	}
+	
+	/**
+	 * TODO write javadoc
+	 */
+	public static String getPlayerColor(Player player)
+	{
+		return player.getDisplayName().substring(0, 2);
+	}
+	
+	/**
+	 * TODO write javadoc
+	 */
+	public static void resetPlayerColor(Player player)
+	{
+		player.setDisplayName(player.getName());
+	}
+	
+	/**
+	 * TODO write javadoc
+	 */
 	public static String getPlayerPrefix(Player player)
 	{
 		if (player.getScoreboard().getTeam(player.getName()) != null)

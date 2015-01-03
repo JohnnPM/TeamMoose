@@ -6,11 +6,13 @@
  */
 package org.teammoose.command;
 
+
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
-import org.teammoose.command.CommandFramework.Command;
-import org.teammoose.command.CommandFramework.CommandArgs;
-import org.teammoose.command.CommandFramework.CommandListener;
+import org.teammoose.command.framework.Command;
+import org.teammoose.command.framework.CommandArgs;
+import org.teammoose.command.framework.CommandListener;
 import org.teammoose.lib.References;
 import org.teammoose.util.ColorUtil;
 import org.teammoose.util.TagUtil;
@@ -34,7 +36,7 @@ public class TagCommand implements CommandListener
 	public void settag(CommandArgs info)
 	{
 		info.getSender().sendMessage(
-				ColorUtil.formatColors("<red>Usage: /tag set <prefix|suffix>"));
+				ColorUtil.formatColors("<red>Usage: /tag set <prefix|suffix|color>"));
 	}
 
 	@Command(command = "tag.set.prefix", permission = "tm.tag.set.prefix")
@@ -197,6 +199,83 @@ public class TagCommand implements CommandListener
 								ColorUtil
 										.formatString(
 												"%s<green>All tags have been removed from player: <aqua>%s<white>.",
+												References.SUCCESS_PREFIX,
+												player.getName()));
+			} else
+			{
+				info.getSender().sendMessage(
+						ColorUtil.formatString(
+								"%s<red>Player \"%s\" could not be found",
+								References.ERROR_PREFIX, info.getArgs()[0]));
+			}
+		}
+	}
+	
+	@Command(command = "tag.set.color", permission = "tm.tag.set.color")
+	public void setcolor(CommandArgs info)
+	{
+		if (info.getArgs().length == 0)
+		{
+			info.getSender()
+					.sendMessage(
+							ColorUtil
+									.formatColors("<red>Usage: /tag set color <player> <color>"));
+		} else
+		{
+			if (Bukkit.getPlayer(info.getArgs()[0]) != null)
+			{
+				Player player = Bukkit.getPlayer(info.getArgs()[0]);
+				ChatColor color = ChatColor.WHITE;
+				try {
+					color = ChatColor.valueOf(info.getFinalArg(1).toUpperCase());
+				} catch(Exception e) {
+					info.getSender().sendMessage(
+							ColorUtil.formatString(
+									"%s<red>Color \"%s\" is invalid!",
+									References.ERROR_PREFIX,
+									info.getFinalArg(1)));
+					return;
+				}
+				TagUtil.setPlayerColor(player, color);
+				info.getSender()
+						.sendMessage(
+								ColorUtil
+										.formatString(
+												"%s<green>Color \"%s%s<green>\" has been added player: <aqua>%s<white>.",
+												References.SUCCESS_PREFIX,
+												color.toString(),
+												info.getFinalArg(1),
+												player.getName()));
+			} else
+			{
+				info.getSender().sendMessage(
+						ColorUtil.formatString(
+								"%s<red>Player \"%s\" could not be found",
+								References.ERROR_PREFIX, info.getArgs()[0]));
+			}
+		}
+	}
+	
+	@Command(command = "tag.remove.color", permission = "tm.tag.remove.color")
+	public void removecolor(CommandArgs info)
+	{
+		if (info.getArgs().length == 0)
+		{
+			info.getSender()
+					.sendMessage(
+							ColorUtil
+									.formatColors("<red>Usage: /tag remove color <player>"));
+		} else
+		{
+			if (Bukkit.getPlayer(info.getArgs()[0]) != null)
+			{
+				Player player = Bukkit.getPlayer(info.getArgs()[0]);
+				TagUtil.resetPlayerColor(player);
+				info.getSender()
+						.sendMessage(
+								ColorUtil
+										.formatString(
+												"%s<green>Name color has been reset for player: <aqua>%s<white>.",
 												References.SUCCESS_PREFIX,
 												player.getName()));
 			} else

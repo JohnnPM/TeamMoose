@@ -9,7 +9,7 @@ Since: <i>0.0.1-SNAPSHOT</i><p>
 Classes
 ---
 
-- <b><i>CommandFramework</i></b><br>
+- <b><i>framework.CommandFramework</i></b><br>
 <i><b>Added TM-0.0.1-SNAPSHOT</b>
 	
 	<b>Written originally by minnymin3 modified by JohnnPM</b><i>

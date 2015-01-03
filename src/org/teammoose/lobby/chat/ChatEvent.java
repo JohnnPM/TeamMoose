@@ -4,7 +4,7 @@
  * Date: Dec 29, 2014
  * Package: org.teammoose.handler
  */
-package org.teammoose.chat;
+package org.teammoose.lobby.chat;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -27,7 +27,7 @@ public class ChatEvent implements Listener
 				ColorUtil.formatString(
 						"<gray>%s%s<white>: %s", 
 						TagUtil.getPlayerPrefix(player),
-						player.getName(),
+						player.getDisplayName(),
 						event.getMessage()));
 	}
 }

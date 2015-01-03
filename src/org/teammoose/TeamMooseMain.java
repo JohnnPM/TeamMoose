@@ -15,7 +15,7 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.teammoose.command.CommandFramework;
+import org.teammoose.command.framework.CommandFramework;
 import org.teammoose.lib.References;
 import org.teammoose.util.RegisterUtil;
 

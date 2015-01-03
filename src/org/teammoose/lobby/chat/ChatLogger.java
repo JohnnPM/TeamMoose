@@ -4,7 +4,7 @@
  * Date: Dec 29, 2014
  * Package: org.teammoose.chat
  */
-package org.teammoose.chat;
+package org.teammoose.lobby.chat;
 
 /**
  * TODO

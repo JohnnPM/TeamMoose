@@ -4,9 +4,14 @@
  * Date: Dec 29, 2014
  * Package: org.teammoose.chat
  */
+package org.teammoose.lobby.chat;
+
 /**
- * 
+ * TODO
  * @author 598Johnn897
  * @since
  */
-package org.teammoose.chat;
+public class ChatManager
+{
+	
+}
