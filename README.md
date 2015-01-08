@@ -3,7 +3,7 @@ TeamMoose
 
 Hello. We are <b>Team Moose</b>.
 
-![Alt text](/resources/TeamMoose.jpg?raw=true "TeamMoose")
+![Alt text](/TeamMoose.jpg?raw=true "TeamMoose")
 
 <b><i>Who are we?</b></i>
 
