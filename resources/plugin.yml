@@ -1,7 +1,0 @@
-name: TeamMoose
-main: org.teammoose.TeamMooseMain
-prefix: TM
-version: 0.0.1-SNAPSHOT
-author: Johnn
-authors: [Johnn, Moose]
-description: the most amazing moose plugin 2k14
